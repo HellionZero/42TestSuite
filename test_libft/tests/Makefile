@@ -5,32 +5,36 @@
 #                                                     +:+ +:+         +:+      #
 #    By: lsarraci <lsarraci@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/07/17 11:40:06 by lsarraci          #+#    #+#              #
-#    Updated: 2025/07/18 17:49:09 by lsarraci         ###   ########.fr        #
+#    Created: 2025/07/18 13:05:46 by lsarraci          #+#    #+#              #
+#    Updated: 2025/07/18 17:44:51 by lsarraci         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-LIBFT_FOLDER = libft
+TESTFILE	= tests_libft.c
+TESTPROGRAM = libft_tests
+LIBDIR		= ../libft/
+TESTDIR		= ../tests/
+NAME		= libft.a
+OBJ			= $(SRC:.c=.o)
+RF 			= rm -f
 
-TEST_FOLDER = tests
+all: 
+	$(MAKE) -C $(LIBDIR)
+	@cc -o $(TESTPROGRAM) -I . -I$(LIBDIR) $(TESTFILE) -L$(LIBDIR) -lft
 
-CC = gcc
+test: fclean
+	$(MAKE) re -C $(LIBDIR) 
+	@cc -o $(TESTPROGRAM) -I . -I$(LIBDIR) $(TESTFILE) -L$(LIBDIR) -lft
+	@./$(TESTPROGRAM)
 
-CFLAGS = -Werror -Wall -Wextra
-
-RF = rm -f
-
-all: main
-
-main:
-	$(MAKE) -C $(TEST_FOLDER)
-
-clean:
-	$(MAKE) -C $(TEST_FOLDER) clean
+leakfull:	test
+			valgrind --track-origins=yes --error-exitcode=42 --leak-check=full ./$(TESTPROGRAM)
+	
+clean: $(OBJ)
+	$(MAKE) -C $(LIBDIR) clean
 
 fclean: clean
-	$(MAKE) -C $(TEST_FOLDER) fclean
+	$(RF) $(TESTPROGRAM)
 
 .PHONY:
-	all main clean 
-		
+	test clean fclean re
