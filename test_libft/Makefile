@@ -6,7 +6,7 @@
 #    By: lsarraci <lsarraci@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/17 11:40:06 by lsarraci          #+#    #+#              #
-#    Updated: 2025/07/18 17:52:34 by lsarraci         ###   ########.fr        #
+#    Updated: 2025/07/18 17:59:32 by lsarraci         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,5 +35,5 @@ fclean: clean
 	$(MAKE) -C $(TEST_FOLDER) fclean
 
 .PHONY:
-	all main clean 
+	all test main clean fclean
 		

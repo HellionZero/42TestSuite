@@ -6,7 +6,7 @@
 #    By: lsarraci <lsarraci@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/18 13:05:46 by lsarraci          #+#    #+#              #
-#    Updated: 2025/07/18 17:56:47 by lsarraci         ###   ########.fr        #
+#    Updated: 2025/07/18 17:59:08 by lsarraci         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,4 +38,4 @@ fclean: clean
 	$(RF) $(TESTPROGRAM)
 
 .PHONY:
-	test clean fclean re
+	all test leakfull clean fclean

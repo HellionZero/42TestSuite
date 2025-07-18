@@ -6,7 +6,7 @@
 /*   By: lsarraci <lsarraci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 16:44:18 by lsarraci          #+#    #+#             */
-/*   Updated: 2025/07/16 18:22:29 by lsarraci         ###   ########.fr       */
+/*   Updated: 2025/07/18 19:18:28 by lsarraci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 
-int		ft_atoi(char *c);
+int		ft_atoi(const char *c);
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t nitems, size_t size);
 int		ft_isalnum(int c);
