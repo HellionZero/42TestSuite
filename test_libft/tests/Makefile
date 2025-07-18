@@ -6,7 +6,7 @@
 #    By: lsarraci <lsarraci@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/18 13:05:46 by lsarraci          #+#    #+#              #
-#    Updated: 2025/07/18 17:44:51 by lsarraci         ###   ########.fr        #
+#    Updated: 2025/07/18 17:56:47 by lsarraci         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,6 +34,7 @@ clean: $(OBJ)
 	$(MAKE) -C $(LIBDIR) clean
 
 fclean: clean
+	$(MAKE) -C $(LIBDIR) fclean
 	$(RF) $(TESTPROGRAM)
 
 .PHONY:

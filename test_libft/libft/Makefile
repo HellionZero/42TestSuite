@@ -6,7 +6,7 @@
 #    By: lsarraci <lsarraci@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/12 17:38:39 by lsarraci          #+#    #+#              #
-#    Updated: 2025/07/18 15:01:33 by lsarraci         ###   ########.fr        #
+#    Updated: 2025/07/18 17:54:21 by lsarraci         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,8 +62,7 @@ clean:
 fclean: clean
 	$(RF) $(NAME)
 
-re: fclean
-	all
+re: fclean all
 
 .PHONY:
 	all clean fclean re 
