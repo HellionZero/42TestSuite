@@ -6,27 +6,28 @@
 /*   By: lsarraci <lsarraci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 18:07:14 by lsarraci          #+#    #+#             */
-/*   Updated: 2025/07/15 19:56:32 by lsarraci         ###   ########.fr       */
+/*   Updated: 2025/07/21 14:12:50 by lsarraci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<stdlib.h>
 #include "libft.h"
 
-void	*ft_memset(void *str, int c, size_t n);
-
 void	*ft_calloc(size_t nitems, size_t size)
 {
-	void	*p;
-	size_t	bytesize;
+	unsigned char	*p;
+	size_t			bytesize;
+	size_t			i;
 
-	p = 0;
-	if (nitems == 0 || size == 0)
-		return (p);
+	i = 0;
 	bytesize = nitems * size;
 	p = malloc(bytesize);
 	if (p != NULL)
 		return (NULL);
-	ft_memset(p, 0, bytesize);
+	while (i < bytesize)
+	{
+		p[i] = 0;
+		i++;
+	}
 	return (p);
 }

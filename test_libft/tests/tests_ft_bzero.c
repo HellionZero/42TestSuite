@@ -1,6 +1,6 @@
 #include "minunit.h"
 #include "libft.h"
-#include "../libft/ft_atoi.c"
+#include "../libft/ft_bzero.c"
 
 MU_TEST(atoi_1_char_to_1_integer)
 {

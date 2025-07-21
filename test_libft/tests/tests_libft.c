@@ -4,14 +4,20 @@
 #include "libft.h"
 
 #include "tests_ft_isalpha.c"
+#include "tests_ft_isdigit.c"
 #include "tests_ft_atoi.c"
 #include "tests_ft_toupper.c"
+#include "tests_ft_strtrim.c"
+#include "tests_ft_strdup.c"
 
 int main() {
 
 	MU_RUN_SUITE(ft_toupper_test_suite);
 	MU_RUN_SUITE(ft_isalpha_test_suite);
+	MU_RUN_SUITE(ft_isdigit_test_suite);
 	MU_RUN_SUITE(ft_atoi_test_suite);
+	MU_RUN_SUITE(ft_strtrim_test_suite);
+	MU_RUN_SUITE(ft_strdup_test_suite);
 
 	MU_REPORT();
 	return (MU_EXIT_CODE);
