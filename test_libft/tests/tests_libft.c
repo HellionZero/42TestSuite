@@ -9,6 +9,7 @@
 #include "tests_ft_toupper.c"
 #include "tests_ft_strtrim.c"
 #include "tests_ft_strdup.c"
+#include "tests_ft_strjoin.c"
 
 int main() {
 
@@ -18,6 +19,7 @@ int main() {
 	MU_RUN_SUITE(ft_atoi_test_suite);
 	MU_RUN_SUITE(ft_strtrim_test_suite);
 	MU_RUN_SUITE(ft_strdup_test_suite);
+	MU_RUN_SUITE(ft_strjoin_test_suite);
 
 	MU_REPORT();
 	return (MU_EXIT_CODE);

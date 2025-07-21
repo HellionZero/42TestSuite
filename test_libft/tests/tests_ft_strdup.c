@@ -15,10 +15,10 @@ MU_TEST(strdup_helloworld_to_helloworld)
 	mu_assert_string_eq(expectedresult, actualresult);
 }
 
-MU_TEST(strdup_helloworld_to_hello)
+MU_TEST(strdup_hello_to_hello)
 {
 	//arrange
-	char 	*i = "helloworld";
+	char 		*i = "hello";
 	char		*actualresult;
 	char		*expectedresult;
 	//act
@@ -33,6 +33,6 @@ MU_TEST(strdup_helloworld_to_hello)
 MU_TEST_SUITE(ft_strdup_test_suite) 
 {
 	MU_RUN_TEST(strdup_helloworld_to_helloworld);
-	MU_RUN_TEST(strdup_helloworld_to_hello);
+	MU_RUN_TEST(strdup_hello_to_hello);
 
 }
