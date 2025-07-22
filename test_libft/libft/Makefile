@@ -6,7 +6,7 @@
 #    By: lsarraci <lsarraci@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/12 17:38:39 by lsarraci          #+#    #+#              #
-#    Updated: 2025/07/18 17:54:21 by lsarraci         ###   ########.fr        #
+#    Updated: 2025/07/22 15:10:52 by lsarraci         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,8 +46,10 @@ SRC = ft_atoi.c \
 		ft_strncmp.c \
 		ft_strnstr.c \
 		ft_strrchr.c \
+		ft_substr.c \
 		ft_tolower.c \
 		ft_toupper.c \
+		ft_putchar_fd.c \
 		
 OBJ = $(SRC:.c=.o)
 

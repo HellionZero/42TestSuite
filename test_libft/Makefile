@@ -6,7 +6,7 @@
 #    By: lsarraci <lsarraci@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/17 11:40:06 by lsarraci          #+#    #+#              #
-#    Updated: 2025/07/18 17:59:32 by lsarraci         ###   ########.fr        #
+#    Updated: 2025/07/22 15:17:37 by lsarraci         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,6 +25,10 @@ all: main
 test:
 	$(MAKE) -C $(TEST_FOLDER) test
 
+leakfull: test
+	$(MAKE) -C $(TEST_FOLDER) leakfull
+	
+
 main:
 	$(MAKE) -C $(TEST_FOLDER)
 
@@ -35,5 +39,5 @@ fclean: clean
 	$(MAKE) -C $(TEST_FOLDER) fclean
 
 .PHONY:
-	all test main clean fclean
+	all test leakfull main clean fclean
 		

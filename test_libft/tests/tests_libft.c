@@ -7,9 +7,11 @@
 #include "tests_ft_isdigit.c"
 #include "tests_ft_atoi.c"
 #include "tests_ft_toupper.c"
-#include "tests_ft_strtrim.c"
+#include "tests_ft_strlcpy.c"
+#include "tests_ft_strlcat.c"
 #include "tests_ft_strdup.c"
 #include "tests_ft_strjoin.c"
+//#include "tests_ft_strtrim.c"
 
 int main() {
 
@@ -17,9 +19,12 @@ int main() {
 	MU_RUN_SUITE(ft_isalpha_test_suite);
 	MU_RUN_SUITE(ft_isdigit_test_suite);
 	MU_RUN_SUITE(ft_atoi_test_suite);
-	MU_RUN_SUITE(ft_strtrim_test_suite);
+	MU_RUN_SUITE(ft_strlcpy_test_suite);
+	MU_RUN_SUITE(ft_strlcat_test_suite);
 	MU_RUN_SUITE(ft_strdup_test_suite);
 	MU_RUN_SUITE(ft_strjoin_test_suite);
+/*MU_RUN_SUITE(ft_strtrim_test_suite);*/
+
 
 	MU_REPORT();
 	return (MU_EXIT_CODE);

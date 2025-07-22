@@ -6,14 +6,12 @@
 /*   By: lsarraci <lsarraci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 12:20:39 by lsarraci          #+#    #+#             */
-/*   Updated: 2025/07/16 18:49:46 by lsarraci         ###   ########.fr       */
+/*   Updated: 2025/07/22 14:48:15 by lsarraci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<stdio.h>
 #include "libft.h"
-
-//int	ft_strlen(char *ch);
 
 size_t	ft_strlcat( char *dst, const char *src, size_t size)
 {
@@ -22,6 +20,8 @@ size_t	ft_strlcat( char *dst, const char *src, size_t size)
 	size_t	dst_len;
 	size_t	src_len;
 
+	if (!dst)
+		return (0);
 	dst_len = (size_t)ft_strlen(dst);
 	src_len = (size_t)ft_strlen((char *)src);
 	j = 0;

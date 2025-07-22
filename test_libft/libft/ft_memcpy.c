@@ -6,12 +6,11 @@
 /*   By: lsarraci <lsarraci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 19:57:49 by lsarraci          #+#    #+#             */
-/*   Updated: 2025/07/16 16:00:27 by lsarraci         ###   ########.fr       */
+/*   Updated: 2025/07/22 14:29:59 by lsarraci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 
 void	*ft_memcpy(void *s1, const void *s2, size_t n)
 {
@@ -32,7 +31,6 @@ void	*ft_memcpy(void *s1, const void *s2, size_t n)
 	s1 = (void *)dest;
 	return (s1);
 }
-
 /*#include<stdio.h>
 
 int	main(void)

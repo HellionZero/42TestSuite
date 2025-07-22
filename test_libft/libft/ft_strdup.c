@@ -6,7 +6,7 @@
 /*   By: lsarraci <lsarraci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 18:23:07 by lsarraci          #+#    #+#             */
-/*   Updated: 2025/07/21 16:29:43 by lsarraci         ###   ########.fr       */
+/*   Updated: 2025/07/22 12:15:10 by lsarraci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,11 @@ char	*ft_strdup(char *src)
 	if (src == NULL)
 		return (NULL);
 	j = ft_strlen(src);
-	dest = malloc(j);
+	dest = (char *)malloc(j + 1);
 	if (dest == NULL)
 		return (NULL);
 	i = 0;
-	while (i < j)
+	while (src[i] != '\0')
 	{
 		dest[i] = src[i];
 		i++;

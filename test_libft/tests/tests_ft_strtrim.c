@@ -5,7 +5,7 @@
 MU_TEST(strtrim_one_space)
 {
 	//arrange
-	const char 	*i = "  ola  ";
+	const char 	i[7] = "  ola  ";
 	const char	*actualresult;
 	const char	*expectedresult;
 	//act
@@ -18,7 +18,7 @@ MU_TEST(strtrim_one_space)
 MU_TEST(strtrim_blank_char)
 {
 	//arrange
-	const char 	*i = "dddd";
+	const char 	i[4] = "dddd";
 	const char	*actualresult;
 	const char	*expectedresult;
 	//act

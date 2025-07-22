@@ -6,7 +6,7 @@
 /*   By: lsarraci <lsarraci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 12:48:11 by lsarraci          #+#    #+#             */
-/*   Updated: 2025/07/21 17:23:10 by lsarraci         ###   ########.fr       */
+/*   Updated: 2025/07/21 17:59:34 by lsarraci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,27 +28,24 @@ static int	ft_trimmer(char *ch, const char c)
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	size_t		i;
-	size_t		j;
-	size_t		h;
+	size_t		start;
+	size_t		ch;
+	int			end;
 	size_t		count;
 	char		*str;
 
-	i = strlen(s1);
-	j = 0;
-	h = 0;
-	while (ft_trimmer((char *)s1, set++))
-		i--;
-	while (ft_trimmer((char *)s1, set++))
-		j++;
-	count = i - j;
-	str = malloc(count + 1);
-	while (h < count)
+	end = strlen((char *)s1);
+	start = 0;
+	while (set[ch] != 0)
 	{
-		str[h] = s1[j];
-		h++;
+		while (ft_trimmer((char *)s1, set[ch]))
+			end--;
+		while (ft_trimmer((char *)s1, set[ch]))
+			start++;
+		ch++;
 	}
-	str[h] = 0;
+	count = end - start;
+	str = ft_substr(s1, (int)start, count);
 	return (str);
 }
 
