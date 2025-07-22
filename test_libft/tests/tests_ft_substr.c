@@ -28,7 +28,7 @@ MU_TEST(find_substring)
 	mu_assert_string_eq(expectedresult, actualresult);
 }
 
-MU_TEST_SUITE(ft_substr_test_suite) 
+MU_TEST_SUITE(ft_substr_test_suite)
 {
 	MU_RUN_TEST(size_major_than_len);
 	MU_RUN_TEST(find_substring);

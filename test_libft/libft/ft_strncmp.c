@@ -6,7 +6,7 @@
 /*   By: lsarraci <lsarraci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 13:16:02 by lsarraci          #+#    #+#             */
-/*   Updated: 2025/07/15 19:56:07 by lsarraci         ###   ########.fr       */
+/*   Updated: 2025/07/22 17:49:05 by lsarraci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,5 @@ int	ft_strncmp(char *s1, char *s2, size_t n)
 	{
 		i++;
 	}
-	return (s1[i] - s2[i]);
+	return ((int)s1[i] - (int)s2[i]);
 }

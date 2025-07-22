@@ -6,7 +6,7 @@
 /*   By: lsarraci <lsarraci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 12:48:11 by lsarraci          #+#    #+#             */
-/*   Updated: 2025/07/21 17:59:34 by lsarraci         ###   ########.fr       */
+/*   Updated: 2025/07/22 17:32:55 by lsarraci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t		start;
 	size_t		ch;
-	int			end;
+	size_t		end;
 	size_t		count;
 	char		*str;
 

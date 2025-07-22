@@ -6,7 +6,7 @@
 /*   By: lsarraci <lsarraci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 11:47:01 by lsarraci          #+#    #+#             */
-/*   Updated: 2025/07/22 16:48:23 by lsarraci         ###   ########.fr       */
+/*   Updated: 2025/07/22 17:17:45 by lsarraci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ void	*ft_memmove(void *dest, const void *src, size_t numBytes)
 			str_dest[i] = str_src[i];
 			i++;
 		}
+		str_dest[i] = 0;
 	}
 	else
 	{
