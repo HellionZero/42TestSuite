@@ -6,7 +6,7 @@
 #    By: lsarraci <lsarraci@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/18 13:05:46 by lsarraci          #+#    #+#              #
-#    Updated: 2025/07/22 15:14:15 by lsarraci         ###   ########.fr        #
+#    Updated: 2025/07/22 15:55:23 by lsarraci         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,7 @@ test: fclean
 	@./$(TESTPROGRAM)
 
 leakfull:	test
-			valgrind --track-origins=yes --error-exitcode=42 --leak-check=full ./$(TESTPROGRAM)
+	valgrind --track-origins=yes --error-exitcode=42 --leak-check=full ./$(TESTPROGRAM)
 	
 clean: $(OBJ)
 	$(MAKE) -C $(LIBDIR) clean

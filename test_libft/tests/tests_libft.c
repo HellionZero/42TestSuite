@@ -6,11 +6,15 @@
 #include "tests_ft_isalpha.c"
 #include "tests_ft_isdigit.c"
 #include "tests_ft_atoi.c"
+#include "tests_ft_memcpy.c"
 #include "tests_ft_toupper.c"
 #include "tests_ft_strlcpy.c"
 #include "tests_ft_strlcat.c"
 #include "tests_ft_strdup.c"
 #include "tests_ft_strjoin.c"
+#include "tests_ft_substr.c"
+#include "tests_ft_strchr.c"
+#include "tests_ft_strrchr.c"
 //#include "tests_ft_strtrim.c"
 
 int main() {
@@ -23,6 +27,10 @@ int main() {
 	MU_RUN_SUITE(ft_strlcat_test_suite);
 	MU_RUN_SUITE(ft_strdup_test_suite);
 	MU_RUN_SUITE(ft_strjoin_test_suite);
+	MU_RUN_SUITE(ft_substr_test_suite);
+	MU_RUN_SUITE(ft_strchr_test_suite);
+	MU_RUN_SUITE(ft_strrchr_test_suite);
+	MU_RUN_SUITE(ft_memcpy_test_suite);
 /*MU_RUN_SUITE(ft_strtrim_test_suite);*/
 
 
