@@ -6,7 +6,7 @@
 /*   By: lsarraci <lsarraci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 13:19:41 by lsarraci          #+#    #+#             */
-/*   Updated: 2025/07/16 19:40:39 by lsarraci         ###   ########.fr       */
+/*   Updated: 2025/07/22 16:25:02 by lsarraci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	*ft_memchr(const void *pointer, int value, size_t count)
 	while (i < count)
 	{
 		if (charp[i] == (unsigned char)value)
-			return ((void *)&charp[i]);
+			return ((void *)(charp + i));
 		i++;
 	}
 	return (0);

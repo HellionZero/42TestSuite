@@ -1,8 +1,8 @@
 #include "minunit.h"
 #include "libft.h"
-#include "../libft/ft_memcpy.c"
+#include "../libft/ft_memmove.c"
 
-MU_TEST(memcpy_returnmem1)
+MU_TEST(memmove_returnmem1)
 {
 	//arrange
 	char 	s1[5] = "";
@@ -10,14 +10,14 @@ MU_TEST(memcpy_returnmem1)
 	char 		*actualresult;
 	char		*expectedresult;
 	//act
-	ft_memcpy(s1, s2, 2);
+	ft_memmove(s1, s2, 2);
 	expectedresult = "he";
 	actualresult = s1;
 	//assert
 	mu_assert_string_eq(expectedresult, actualresult);
 }
 
-MU_TEST(memcpy_returnnull)
+MU_TEST(memmove_returnnull)
 {
 	//arrange
 	char 		s1[5] = "hello";
@@ -25,14 +25,14 @@ MU_TEST(memcpy_returnnull)
 	char		*actualresult;
 	char		*expectedresult;
 	//act
-	ft_memcpy(s1, s2, 5);
+	ft_memmove(s1, s2, 5);
 	expectedresult = "";
 	actualresult = s1;
 	//assert
 	mu_assert_string_eq(expectedresult, actualresult);
 }
 
-MU_TEST_SUITE(ft_memcpy_test_suite) 
+MU_TEST_SUITE(ft_memmove_test_suite) 
 {
 	MU_RUN_TEST(memcpy_returnmem1);
 	MU_RUN_TEST(memcpy_returnnull);

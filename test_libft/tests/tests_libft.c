@@ -7,6 +7,7 @@
 #include "tests_ft_isdigit.c"
 #include "tests_ft_atoi.c"
 #include "tests_ft_memcpy.c"
+#include "tests_ft_memchr.c"
 #include "tests_ft_toupper.c"
 #include "tests_ft_strlcpy.c"
 #include "tests_ft_strlcat.c"
@@ -31,6 +32,7 @@ int main() {
 	MU_RUN_SUITE(ft_strchr_test_suite);
 	MU_RUN_SUITE(ft_strrchr_test_suite);
 	MU_RUN_SUITE(ft_memcpy_test_suite);
+	MU_RUN_SUITE(ft_memchr_test_suite);
 /*MU_RUN_SUITE(ft_strtrim_test_suite);*/
 
 
