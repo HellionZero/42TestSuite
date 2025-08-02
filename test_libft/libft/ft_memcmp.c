@@ -6,7 +6,7 @@
 /*   By: lsarraci <lsarraci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 17:01:57 by lsarraci          #+#    #+#             */
-/*   Updated: 2025/07/16 17:56:54 by lsarraci         ###   ########.fr       */
+/*   Updated: 2025/07/22 17:59:08 by lsarraci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,8 @@ int	ft_memcmp(void *pointer1, void *pointer2, size_t size)
 	i = 0;
 	while (i < size)
 	{
-		if (p1 != p2)
-		{
-			if (p1 > p2)
-				return (1);
-			else if (p1 < p2)
-				return (-1);
-		}
+		if (p1[i] != p2[i])
+			return (p1[i] - p2[i]);
 		return (0);
 		i++;
 	}

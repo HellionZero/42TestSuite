@@ -6,7 +6,7 @@
 /*   By: lsarraci <lsarraci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 11:58:56 by lsarraci          #+#    #+#             */
-/*   Updated: 2025/07/21 17:00:42 by lsarraci         ###   ########.fr       */
+/*   Updated: 2025/07/23 12:35:19 by lsarraci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	}
 	s3[i + j] = 0;
 	return (s3);
+	free(s3);
 }
 
 /*#include<stdio.h>

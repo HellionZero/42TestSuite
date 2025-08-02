@@ -6,7 +6,7 @@
 /*   By: lsarraci <lsarraci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 19:59:45 by lsarraci          #+#    #+#             */
-/*   Updated: 2025/07/22 15:39:54 by lsarraci         ###   ########.fr       */
+/*   Updated: 2025/07/22 19:58:37 by lsarraci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	}
 	if (len >= size - start)
 	{
-		sub = malloc(size - (int)start + 1);
-		ft_strlcpy(sub, s + start, size - start);
+		sub = malloc((size - (int)start + 1) * sizeof(char));
+		ft_strlcpy(sub, s + start, (size_t)(size - start));
 	}
 	if (len < size - start)
 		ft_strlcpy(sub, s + start, len);
