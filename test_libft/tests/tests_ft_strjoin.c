@@ -14,6 +14,7 @@ MU_TEST(join_hello_and_world_to_helloworld)
 	actualresult = ft_strjoin(i, j);
 	//assert
 	mu_assert_string_eq(expectedresult, actualresult);
+	free (actualresult);
 }
 
 MU_TEST(join_helloworld_to_void)
@@ -28,6 +29,7 @@ MU_TEST(join_helloworld_to_void)
 	actualresult = ft_strjoin(i, j);
 	//assert
 	mu_assert_string_eq(expectedresult, actualresult);
+	free (actualresult);
 }
 
 MU_TEST(join_void_to_helloworld)

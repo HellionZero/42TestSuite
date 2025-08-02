@@ -7,12 +7,14 @@
 #include "tests_ft_isdigit.c"
 #include "tests_ft_atoi.c"
 #include "tests_ft_memcpy.c"
+#include "tests_ft_memcmp.c"
 #include "tests_ft_memchr.c"
 #include "tests_ft_memmove.c"
 #include "tests_ft_toupper.c"
 #include "tests_ft_strncmp.c"
+#include "tests_ft_strnstr.c"
 #include "tests_ft_strlcpy.c"
-//#include "tests_ft_strlcat.c"
+#include "tests_ft_strlcat.c"
 #include "tests_ft_strdup.c"
 #include "tests_ft_strjoin.c"
 #include "tests_ft_substr.c"
@@ -27,14 +29,16 @@ int main() {
 	MU_RUN_SUITE(ft_isdigit_test_suite);
 	MU_RUN_SUITE(ft_atoi_test_suite);
 	MU_RUN_SUITE(ft_strlcpy_test_suite);
-//	MU_RUN_SUITE(ft_strlcat_test_suite);
+	MU_RUN_SUITE(ft_strlcat_test_suite);
 	MU_RUN_SUITE(ft_strdup_test_suite);
 	MU_RUN_SUITE(ft_strjoin_test_suite);
 	MU_RUN_SUITE(ft_substr_test_suite);
 	MU_RUN_SUITE(ft_strchr_test_suite);
 	MU_RUN_SUITE(ft_strrchr_test_suite);
 	MU_RUN_SUITE(ft_strncmp_test_suite);
+	MU_RUN_SUITE(ft_strnstr_test_suite);
 	MU_RUN_SUITE(ft_memcpy_test_suite);
+	MU_RUN_SUITE(ft_memcmp_test_suite);
 	MU_RUN_SUITE(ft_memchr_test_suite);
 	MU_RUN_SUITE(ft_memmove_test_suite);
 //	MU_RUN_SUITE(ft_strtrim_test_suite);

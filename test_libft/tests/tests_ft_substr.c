@@ -2,7 +2,7 @@
 #include "libft.h"
 #include "../libft/ft_substr.c"
 
-MU_TEST(size_major_than_len)
+MU_TEST(ft_substr_size_major_than_len)
 {
 	//arrange
 	char 	i[10] = "helloworld";
@@ -15,7 +15,7 @@ MU_TEST(size_major_than_len)
 	mu_assert_string_eq(expectedresult, actualresult);
 }
 
-MU_TEST(find_substring)
+MU_TEST(ft_substr_find_substring)
 {
 	//arrange
 	char 	i[10] = "helloworld";
@@ -30,7 +30,7 @@ MU_TEST(find_substring)
 
 MU_TEST_SUITE(ft_substr_test_suite)
 {
-	MU_RUN_TEST(size_major_than_len);
-	MU_RUN_TEST(find_substring);
+	MU_RUN_TEST(ft_substr_size_major_than_len);
+	MU_RUN_TEST(ft_substr_find_substring);
 
 }

@@ -9,7 +9,7 @@ MU_TEST(strlcat_join_strings)
 	char		*expectedresult;
 	char		*actualresult;
 	
-	ft_strlcat(str1, str2, 5);
+	ft_strlcat(str1, str2, 7);
 	expectedresult = "hoje ta tudo bem por aqui";
 	actualresult = str1;
 	mu_assert_string_eq(expectedresult, actualresult);
